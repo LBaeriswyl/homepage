@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "homepage server-side",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LBaeriswyl/homepage.git"
+  },
+  "keywords": [],
+  "author": "Laurent Baeriswyl",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

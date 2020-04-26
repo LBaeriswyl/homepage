@@ -2,9 +2,20 @@ version: '3.7'
 
 services:
 
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  server:
+    build: ./server
+    expose: 
+       - 8080
+    ports: 
+       - 8080:8080
     volumes:
-      - .:/app
+       - ./server:/usr/src/app
+  
+  client:
+    build: ./client
+    expose: 
+       - 4000
+    ports: 
+       - 4000:4000
+    links: 
+       - server

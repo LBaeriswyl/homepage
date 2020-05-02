@@ -13,11 +13,11 @@ services:
    client:
       build: ./client
       expose: 
-         - 4000
+         - 3000
       ports: 
-         - 4000:4000
-      links: 
-         - server
+         - 3000:3000
+      volumes:
+         - ./client:/usr/src/app
    
    mongo:
       image: mongo

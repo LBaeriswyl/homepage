@@ -1,12 +1,12 @@
 FROM node:latest
 
-WORKDIR /srv/app
+WORKDIR /usr/src/app
 
-COPY package.json /srv/app
-COPY package-lock.json /srv/app
+COPY package.json ./
+COPY package-lock.json ./
 
 RUN npm install
 
-COPY . /srv/app
+COPY . .
 
-CMD [ "npm", "run", "react-dev" ]
+CMD [ "npm", "start" ]

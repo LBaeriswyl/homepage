@@ -16,6 +16,7 @@ services:
          - 3000
       ports: 
          - 3000:3000
+      stdin_open: true
       volumes:
          - ./client:/usr/src/app
    

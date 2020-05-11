@@ -1,6 +1,5 @@
 FROM node:latest
 
-#RUN mkdir -p /srv/app
 WORKDIR /usr/src/app
 
 COPY package.json ./
